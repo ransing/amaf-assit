@@ -21,7 +21,13 @@
       })
 
   document.querySelector('.search-form-control').addEventListener('input',function(e){
-    console.log(e.target.value)
+    console.log(e.target.value.length)
+    if (e.target.value.length < 5 ){
+      document.queryselector(".invalid-feedback").display = 'none'
+    }
+    if (e.target.value.length > 4 ){
+      document.querySelector('.search-zip').disabled = false;
+    }
     let num = e.target.value
     if (num > 10475) {
       document.querySelector('.search-zip').disabled = true;
