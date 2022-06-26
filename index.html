@@ -138,7 +138,7 @@
           <form action="forms/contact.php" method="post" role="form" class="php-email-form requires-validation" novalidate>
             <div class="row justify-content-center">
               <div class="form-group col col-lg-2 center">
-                <input type="number" name="name" min="10451" max="10475" class="search-form-control" id="name" placeholder="zip code" required>
+                <input type="number" name="name" min="10451" max="10475" class="search-form-control form-control" id="name" placeholder="zip code" required>
                 <div class="invalid-feedback">
                   Please provide a valid Bronx zip code (10451-10475).
                 </div>
@@ -161,15 +161,21 @@
           </form>
           <dialog id="dialog">
             <form method="dialog">
-              <h4>Zip code:</h4>
-              <p>Yes, this is dialog.</p>
-              <p>Polulation: kjhkfjhsdkj fh</p>
-              <p>Borough: Bronx</p>
-              <p>Polupation: kjhkfjhsdkj fh</p>
+              <div class="container">
+                <div class="row row-cols-2">
+                  <div class="col-4 h-25">Zip Code</div>
+                  <div class="col-8 zip-code-stored">Column</div>
+                  <div class="col-4 h-25">Population</div>
+                  <div class="col-8 population">Column</div>
+                  <div class="col-4">Athma threat Level</div>
+                  <div class="col-8 threat-level">Column</div>
+                  <div class="col-4">Air Quality Index</div>
+                  <div class="col-8 air-quality-index">Column</div>
+                </div>
+              </div>
+              
           
-              <!-- <button class="outline close" onClick="dialog.close()">&times;</button> -->
-          
-              <button class="outlined">Cancel</button>
+              <button class="outlined">Cancel</button> -->
               <button>OK, Continue</button>
             </form>
           </dialog>

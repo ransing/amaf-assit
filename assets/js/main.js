@@ -34,6 +34,15 @@
       document.querySelector('.search-zip').disabled = false;
       document.querySelector(".invalid-feedback").style.display = "none"
     }
+    document.querySelector('.zip-code-stored').innerHTML = e.target.value
+    const threatLevel = ["Mild", "Moderate", "High"]
+    const airQualityIndex = ['Good','Moderate', 'Unhealthy for Sensitive Groups','Unhealthy','Very Unhealthy']
+    const randomthreatLevel = threatLevel[Math.floor(Math.random() * threatLevel.length)];
+    const randomAirLevel = airQualityIndex[Math.floor(Math.random() * airQualityIndex.length)];
+    document.querySelector('.threat-level').innerHTML = randomthreatLevel
+    document.querySelector('.air-quality-index').innerHTML = randomAirLevel
+    document.querySelector('.population').innerHTML = Math.floor(Math.random() * (94000 - 50000) + 50000);
+    
   
   })
 
