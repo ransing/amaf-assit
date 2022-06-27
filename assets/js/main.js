@@ -41,15 +41,21 @@
       document.querySelector(".invalid-feedback").style.display = "none"
     }
     document.querySelector('.zip-code-stored').innerHTML = e.target.value
-    const threatLevel = ["Mild", "Moderate", "High"]
-    const airQualityIndex = ['Good','Moderate', 'Unhealthy for Sensitive Groups','Unhealthy','Very Unhealthy']
+    const threatLevel = [["Mild","green"], ["Moderate", "gold"], ["High", "red"]]
+    const airQualityIndex = [['Good',"green"],['Moderate','yellow'], ['Unhealthy for Sensitive Groups',"orange"],['Unhealthy','red'],['Very Unhealthy','maroon']]
     const randomthreatLevel = threatLevel[Math.floor(Math.random() * threatLevel.length)];
     const randomAirLevel = airQualityIndex[Math.floor(Math.random() * airQualityIndex.length)];
-    document.querySelector('.threat-level').innerHTML = randomthreatLevel
-    document.querySelector('.air-quality-index').innerHTML = randomAirLevel
+    document.querySelector('.threat-level').innerHTML = randomthreatLevel[0]
+    document.querySelector('.threat-level').style.backgroundColor = randomthreatLevel[1]
+    document.querySelector('.air-quality-index').innerHTML = randomAirLevel[0]
+    document.querySelector('.air-quality-index').style.backgroundColor = randomAirLevel[1]
     document.querySelector('.population').innerHTML = Math.floor(Math.random() * (94000 - 50000) + 50000);
     
   
+  })
+
+  document.querySelector(".fill-out-form-btn").addEventListener("click", () => {
+    window.location.href = "/#amaf-form"
   })
 
   // const checkFormValid = () => {
@@ -270,7 +276,7 @@
    * Clients Slider
    */
   new Swiper('.hero-slider', {
-    speed: 1000,
+    speed: 2000,
     loop: true,
     effect: 'fade',
     autoplay: {
@@ -283,7 +289,7 @@
    * Clients Slider
    */
   new Swiper('.clients-slider', {
-    speed: 400,
+    speed: 600,
     loop: true,
     autoplay: {
       delay: 5000,
@@ -298,18 +304,18 @@
     breakpoints: {
       320: {
         slidesPerView: 2,
-        spaceBetween: 20
+        spaceBetween: 70
       },
       480: {
         slidesPerView: 3,
-        spaceBetween: 20
+        spaceBetween: 70
       },
       640: {
-        slidesPerView: 4,
+        slidesPerView: 2,
         spaceBetween: 20
       },
       992: {
-        slidesPerView: 6,
+        slidesPerView: 4,
         spaceBetween: 20
       }
     }

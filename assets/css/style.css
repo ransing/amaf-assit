@@ -404,13 +404,18 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.6rem;
 }
 
+#search-form .mock-data {
+  font-size: 11px;
+  color: rgb(133, 132, 132);
+}
+
 
 #search-form #dialog button{
 background: #0c879a;
 border: 2px solid #0c879a;
 color: white;
 border-radius: 6px;
-padding: 12px 18px;
+padding: 5px 18px;
 cursor: pointer;
 }
 
@@ -459,6 +464,44 @@ cursor: pointer;
 
 #search-form #dialog button :hover {
   background: #065e6c;
+}
+
+#dialog {
+  width:50vw;
+  overflow: hidden;
+}
+
+#dialog .row div {
+  line-height:27px;
+}
+
+#dialog .row {
+  margin-bottom:10px;
+}
+
+
+
+#dialog .container {
+  margin-left:12%;
+}
+
+
+#dialog .modal-buttons {
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top:25px;
+}
+
+@media only screen and (max-width: 600px) {
+  #dialog {
+    width:100%;
+  }
+
+  #dialog .container {
+    margin-left:auto;
+  }
 }
 
 /* pdf section */
@@ -569,16 +612,26 @@ cursor: pointer;
   border: 2px solid #0c2e8a;
 }
 #hero .hero-content .btn-get-started:hover {
-  background: none;
-  color: #0c2e8a;
+  /* background: rgb(6, 2, 11); */
+  /* color: #0c2e8a; */
+  animation: pulse 1s;
+  box-shadow: 0 0 0 0.8em transparent;
+  /* box-shadow: inset 0 0 0 2em ; */
 }
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 ; }
+}
+
+
+
 #hero .hero-content .btn-projects {
   background: #50d8af;
   border: 2px solid #50d8af;
 }
 #hero .hero-content .btn-projects:hover {
-  background: none;
-  color: #50d8af;
+  animation: pulse 1s;
+  box-shadow: 0 0 0 0.8em transparent;
 }
 #hero .hero-slider {
   z-index: 8;
@@ -824,6 +877,10 @@ section {
 #clients {
   padding: 30px 0;
 }
+
+#clients h2{
+  color: azure;
+}
 #clients img {
   max-width: 100%;
   opacity: 0.5;
@@ -1057,6 +1114,11 @@ section {
   background-color: #50d8af;
 }
 
+#clients .img-fluid{
+  height: 200px;
+  width: 170px;
+}
+
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
@@ -1146,6 +1208,25 @@ section {
 #contact {
   padding: 30px 0;
 }
+
+#contact .hide-hover{
+  display: none;
+}
+
+#contact h2 , p {
+  color: azure;
+}
+
+#contact .text-center:hover  + .hide-hover{
+  display: block;
+  color: rgba(166, 9, 9, 0.841);
+}
+
+#contact .form-control:hover + .hide-hover{
+  display: block;
+  color: rgba(166, 9, 9, 0.841);
+}
+
 #contact .contact-info {
   margin-bottom: 20px;
   text-align: center;

@@ -97,14 +97,14 @@
 
 
   <!-- sticky left tracks -->
-  <section id="train-tracks">
+  <!-- <section id="train-tracks">
     <div class="row">
     <div class=" col yellow-track"></div>
     <div class=" col green-track"></div>
     <div class=" col orange-track"></div>
     <div class=" col blue-track"></div>
   </div>
-  </section>
+  </section> -->
 
   <!-- ======= hero Section ======= -->
   <section id="hero">
@@ -114,7 +114,7 @@
       <img class="hero-logo" src="./assets/img/breathe-easy-icon.png"/>
       <div>
         <a href="#search-form" class="btn-get-started ">Get Started</a>
-        <a href="#portfolio" class="btn-projects ">Partners</a>
+        <a href="#clients" class="btn-projects ">Partners</a>
         <a href="#amaf-form" class="btn-get-started ">AMAF</a>
       </div>
     </div>
@@ -165,7 +165,7 @@
             </div>
 
             <div class="text-center">
-              <button onClick="dialog.showModal()" class="search-zip rounded-pill" type="submit" disabled >Search</button>
+              <button onClick="dialog.showModal()" class="search-zip " type="submit" disabled >Search</button>
             </div>
 
             
@@ -173,21 +173,30 @@
           <dialog id="dialog">
             <form method="dialog">
               <div class="container">
-                <div class="row row-cols-2">
-                  <div class="col-4 h-25">Zip Code</div>
-                  <div class="col-8 zip-code-stored">Column</div>
-                  <div class="col-4 h-25">Population</div>
-                  <div class="col-8 population">Column</div>
-                  <div class="col-4">Athma threat Level</div>
-                  <div class="col-8 threat-level">Column</div>
-                  <div class="col-4">Air Quality Index</div>
-                  <div class="col-8 air-quality-index">Column</div>
-                </div>
+                <div class="row">
+                  <div class="col-8 col-sm-5 h-25"><b>Zip Code</b></div>
+                  <div class="col-4 zip-code-stored">Column</div>
+                  </div>
+                  <div class="row">
+                  <div class="col-8 col-sm-5 h-25"><b>Population</b></div>
+                  <div class="col-4 population result">Column</div>
+                  </div>
+                  <div class="row">
+                  <div class="col-8 col-sm-5"><b>Asthma Risk</b></div>
+                  <div class="col-4 threat-level">Column</div>
+                  </div>
+                  <div class="row">
+                  <div class="col-7 col-sm-5"><b>Air Quality Index</b></div>
+                  <div class="col-5 col-sm-5 air-quality-index">Column</div>
+                  </div>
+                <!-- </div> -->
+                <p class="mock-data">* mock data</p>
               </div>
               
-          
-              <button class="outlined">Cancel</button> -->
-              <button>OK, Continue</button>
+              <div class="modal-buttons">
+              <button class="outlined ">Close</button> 
+              <button class="fill-out-form-btn">Fill out AMAF form</button>
+              </div>
             </form>
           </dialog>
           
@@ -198,7 +207,7 @@
     </section>
 
     <!-- ======= About Section ======= -->
-    <section id="about">
+    <!-- <section id="about">
       <div class="container" data-aos="fade-up">
         <div class="row">
           <div class="col-lg-6 about-img">
@@ -219,7 +228,7 @@
         </div>
 
       </div>
-    </section>
+    </section> -->
     <!-- End About Section -->
 
     <!-- pdf section -->
@@ -258,15 +267,15 @@
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Newsletter & Reminders</h2>
-          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+          <p>Sign up for up to date information about respiratory health in Bronx. Set up reminders for annual AMAF registration and renewals. Reminders will be sent 1 month before the form is due. </p>
         </div>
       </div>
 
-      <div class="container mx-auto">
+      <div class="container mx-auto d-flex align-items-center justify-content-center">
         <div class=" center form">
           <form action="forms/contact.php" method="post" role="form" class=" center php-email-form d-flex">
-            <div class="row align-items-center">
-              <div class="d-flex justify-content-center form-group col-md-4 text-center">
+            <div class="d-flex justify-content-center align-items-center flex-column">
+              <div class="form-group col-md-12 text-center">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Email" required>
               </div>
               
@@ -276,7 +285,7 @@
               <div class="error-message"></div>
               <div class="sent-message">Your message has been sent. Thank you!</div>
             </div>
-            <div class="d-flex justify-content-center btn-group p-2 text-center" role="group" aria-label="Basic checkbox toggle button group">
+            <div class="d-flex justify-content-center btn-group pt-0 pb-4 text-center" role="group" aria-label="Basic checkbox toggle button group">
               <input type="checkbox" class="btn-check col" id="btncheck1" autocomplete="off">
               <label class=" col btn btn-outline-primary" for="btncheck1">Newsletter</label>
             
@@ -285,7 +294,8 @@
             
             </div>
 
-            <div class="text-center"><button disabled type="submit">Sign Up</button></div>
+            <div class="text-center"><button type="submit" disabled  data-bs-toggle="tooltip" title="Tooltip on right">Sign Up</button></div>
+            <div class="hide-hover">Feature coming soon.</div>
           </form>
         </div>
 
@@ -295,7 +305,7 @@
     
 
     <!-- ======= Services Section ======= -->
-    <section id="services">
+    <!-- <section id="services">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Services</h2>
@@ -339,14 +349,15 @@
         </div>
 
       </div>
-    </section><!-- End Services Section -->
+    </section> -->
+    <!-- End Services Section -->
 
     <!-- ======= Clients Section ======= -->
     <section id="clients">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>Clients</h2>
-          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+          <h2>Partners</h2>
+          <p></p>
         </div>
 
         <div class="clients-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -364,10 +375,11 @@
         </div>
 
       </div>
-    </section><!-- End Clients Section -->
+    </section>
+    <!-- End Clients Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
+    <!-- <section id="portfolio" class="portfolio">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Our Portfolio</h2>
@@ -480,10 +492,11 @@
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section> -->
+    <!-- End Portfolio Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials">
+    <!-- <section id="testimonials">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Testimonials</h2>
@@ -504,8 +517,7 @@
                 <h3>Saul Goodman</h3>
                 <h4>Ceo &amp; Founder</h4>
               </div>
-            </div><!-- End testimonial item -->
-
+            </div>
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
@@ -517,7 +529,7 @@
                 <h3>Sara Wilsson</h3>
                 <h4>Designer</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -530,7 +542,7 @@
                 <h3>Jena Karlis</h3>
                 <h4>Store Owner</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -543,7 +555,7 @@
                 <h3>Matt Brandon</h3>
                 <h4>Freelancer</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -556,17 +568,18 @@
                 <h3>John Larson</h3>
                 <h4>Entrepreneur</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div>
 
           </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section> -->
+    <!-- End Testimonials Section -->
 
     <!-- ======= Call To Action Section ======= -->
-    <section id="call-to-action">
+    <!-- <section id="call-to-action">
       <div class="container" data-aos="zoom-out">
         <div class="row">
           <div class="col-lg-9 text-center text-lg-start">
@@ -578,10 +591,11 @@
           </div>
         </div>
       </div>
-    </section><!-- End Call To Action Section -->
+    </section> -->
+    <!-- End Call To Action Section -->
 
     <!-- ======= Team Section ======= -->
-    <section id="team">
+    <!-- <section id="team">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Our Team</h2>
@@ -653,10 +667,11 @@
         </div>
 
       </div>
-    </section><!-- End Team Section -->
+    </section> -->
+    <!-- End Team Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact">
+    <!-- <section id="contact">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Contact Us</h2>
@@ -725,27 +740,24 @@
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section> -->
+    <!-- End Contact Section -->
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
+  <!-- <footer id="footer">
     <div class="container">
       <div class="copyright">
         &copy; Copyright <strong>Reveal</strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!--
-        All the links in the footer should remain intact.
-        You can delete the links only if you purchased the pro version.
-        Licensing information: https://bootstrapmade.com/license/
-        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Reveal
-      -->
+        
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer> -->
+  <!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
