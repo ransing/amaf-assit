@@ -58,6 +58,10 @@
     window.location.href = "/#amaf-form"
   })
 
+  document.querySelector(".search-zip").addEventListener("click", () => {
+    window.location.href = "/#hero"
+  })
+
   // const checkFormValid = () => {
   //   console.log('onkeychange')
   // }
