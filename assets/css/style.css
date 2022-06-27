@@ -338,6 +338,41 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
+
+
+/* train tracks */
+
+#train-tracks {
+  position: fixed; 
+  float: left;
+  left: 0; 
+  border: 0;
+  width: 40px;
+  height: 900px;
+  z-index: 20;
+}
+
+#train-tracks .yellow-track{
+  background-color: rgb(191, 191, 127);
+  width: 8px !important;
+  height: 800px;
+}
+#train-tracks .green-track{
+  background-color: rgb(42, 195, 40);
+  width: 8px !important;
+  height: 700px;
+}
+#train-tracks .orange-track{
+  background-color: rgb(220, 125, 24);
+  width: 10px;
+  height: 500px;
+}
+#train-tracks .blue-track{
+  background-color: rgb(9, 88, 215);
+  width: 10px;
+  height: 800px;
+}
+
 /*--------------------------------------------------------------
 #search  Section
 --------------------------------------------------------------*/
@@ -426,7 +461,45 @@ cursor: pointer;
   background: #065e6c;
 }
 
+/* pdf section */
 
+#amaf-form h2{
+  font-size: 29px;
+  color: #fafafb;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+#amaf-form ul li {
+  font-size: 18px;
+  color: #fafafb;
+}
+
+#amaf-form h3 {
+  font-size: 22px;
+  color: #fafafb;
+}
+
+#amaf-form .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    line-height:34px;
+    text-align:center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 30px;
+    color: white
+}
+
+#amaf-form .blue-circle {
+  background-color: blue;
+}
+
+#amaf-form .orange-circle {
+  background-color: orange;
+}
 
 
 /*--------------------------------------------------------------
