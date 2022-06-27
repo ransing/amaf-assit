@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background: rgba(0, 0, 0, 0.906);
+  background: rgba(27, 27, 27, 0.906);
   color: #444;
   font-family: "Open Sans", sans-serif;
 }
@@ -502,6 +502,11 @@ cursor: pointer;
 }
 
 
+#contact .btn-group{
+  justify-content: center;
+  width: 300px;
+}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -726,11 +731,26 @@ section {
   padding-right: 4px;
   color: #50d8af;
 }
+#amaf-form .content i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #50d8af;
+}
 #about .content ul {
   list-style: none;
   padding: 0;
 }
+
+#amaf-form .content ul {
+  list-style: none;
+  padding: 0;
+}
+
 #about .content ul li {
+  padding-bottom: 10px;
+}
+
+#amaf-form .content ul li {
   padding-bottom: 10px;
 }
 

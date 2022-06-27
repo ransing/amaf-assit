@@ -113,9 +113,9 @@
       <!-- <h2>Breathe <span>Easy</span><br>Bronx!</h2> -->
       <img class="hero-logo" src="./assets/img/breathe-easy-icon.png"/>
       <div>
-        <a href="#search-form" class="btn-get-started scrollto">Get Started</a>
-        <a href="#portfolio" class="btn-projects scrollto">Our Projects</a>
-        <a href="#about" class="btn-get-started scrollto">Modal</a>
+        <a href="#search-form" class="btn-get-started ">Get Started</a>
+        <a href="#portfolio" class="btn-projects ">Partners</a>
+        <a href="#amaf-form" class="btn-get-started ">AMAF</a>
       </div>
     </div>
 
@@ -149,7 +149,7 @@
           <form action="forms/contact.php" method="post" role="form" class="php-email-form requires-validation" novalidate>
             <div class="row justify-content-center">
               <div class=" pe-4 ps-4 form-group col col-lg-2 center">
-                <input type="number" name="name" min="10451" max="10475" class="search-form-control form-control" id="name" placeholder="zip code" required>
+                <input type="number" name="name" min="10451" max="10475" class="search-form-control form-control" id="name" placeholder="Zip code" required>
                 <div class="invalid-feedback">
                   Please provide a valid Bronx zip code (10451-10475).
                 </div>
@@ -243,7 +243,7 @@
           </div>
 
           <div class="col-lg-6 about-img">
-            <iframe src="https://www.schools.nyc.gov/docs/default-source/default-document-library/asthma-medication-administration-form-2021-22" width="100%" height="440px"></iframe>
+            <iframe src="https://www.schools.nyc.gov/docs/default-source/default-document-library/asthma-medication-administration-form-2021-22" width="100%" height="500px"></iframe>
             <!-- <img src="assets/img/about-img.jpg" alt=""> -->
           </div>
         </div>
@@ -252,6 +252,47 @@
     </section>
 
     <!-- end pdf sectiuon -->
+
+    <!-- newsletter-section -->
+    <section id="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Newsletter & Reminders</h2>
+          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+        </div>
+      </div>
+
+      <div class="container mx-auto">
+        <div class=" center form">
+          <form action="forms/contact.php" method="post" role="form" class=" center php-email-form d-flex">
+            <div class="row align-items-center">
+              <div class="d-flex justify-content-center form-group col-md-4 text-center">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Email" required>
+              </div>
+              
+
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="d-flex justify-content-center btn-group p-2 text-center" role="group" aria-label="Basic checkbox toggle button group">
+              <input type="checkbox" class="btn-check col" id="btncheck1" autocomplete="off">
+              <label class=" col btn btn-outline-primary" for="btncheck1">Newsletter</label>
+            
+              <input type="checkbox" class="btn-check col" id="btncheck2" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btncheck2">AMAF reminder</label>
+            
+            </div>
+
+            <div class="text-center"><button disabled type="submit">Sign Up</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    
 
     <!-- ======= Services Section ======= -->
     <section id="services">
