@@ -32,10 +32,12 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
+  word-spacing: 5px;
+  letter-spacing: 2px;
 }
 
 .search-zip:disabled {
@@ -379,7 +381,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 #search-form button[type=submit] {
-  background: #50d8af;
+  background: #49B364;
   border: 0;
   border-radius: 3px;
   padding: 10px 30px;
@@ -404,6 +406,22 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.6rem;
 }
 
+#search-form .search-zip:hover{
+  background:  #66A3D8;
+  animation: pulse 1s;
+  box-shadow: 0 0 0 0.8em transparent;
+}
+
+#search-form .blue-text{
+  color: #92b5d3;
+}
+
+#search-form .form-check-input:checked{
+  background-color: #49B364;
+  border-color: #E76051;
+  border-width: 1px;
+}
+
 #search-form .mock-data {
   font-size: 11px;
   color: rgb(133, 132, 132);
@@ -420,11 +438,19 @@ cursor: pointer;
 }
 
 #search-form h2{
-  font-size: 22px;
+  font-size: 23px;
   color: #fafafb;
   font-weight: 700;
   position: relative;
   padding-bottom: 20px;
+  font: Helvetica;
+}
+
+#search-form p {
+  font-family: Helvetica;
+  font-size: 20px;
+  color: azure;
+  margin-bottom: 0px;
 }
 
 
@@ -516,6 +542,8 @@ cursor: pointer;
 
 #amaf-form ul li {
   font-size: 18px;
+  font-family: Helvetica;
+  letter-spacing: 1px;
   color: #fafafb;
 }
 
@@ -578,7 +606,8 @@ cursor: pointer;
 
 #hero .hero-logo{
   margin: 25px;
-  width: 195px;
+  width: 295px;
+  filter: drop-shadow(0.4px 0.4px 0.4px rgb(222, 219, 219));
 }
 #hero .hero-content h2 {
   color: #0c2e8a;
@@ -596,8 +625,8 @@ cursor: pointer;
   }
 }
 #hero .hero-content .btn-get-started, #hero .hero-content .btn-projects {
-  font-family: "Raleway", sans-serif;
-  font-size: 15px;
+  font-family: "Helvetica", sans-serif;
+  font-size: 17px;
   font-weight: bold;
   letter-spacing: 1px;
   display: inline-block;
@@ -608,14 +637,17 @@ cursor: pointer;
   color: #fff;
 }
 #hero .hero-content .btn-get-started {
-  background: #0c2e8a;
+  /* background:  #0c2e8a; */
+  background-color: #EF8E2D;
   border: 2px solid #0c2e8a;
+  font: helvetica;
 }
 #hero .hero-content .btn-get-started:hover {
   /* background: rgb(6, 2, 11); */
   /* color: #0c2e8a; */
   animation: pulse 1s;
   box-shadow: 0 0 0 0.8em transparent;
+  background:#66A3D8;
   /* box-shadow: inset 0 0 0 2em ; */
 }
 
@@ -626,12 +658,14 @@ cursor: pointer;
 
 
 #hero .hero-content .btn-projects {
-  background: #50d8af;
+  /* background: #50d8af; */
+  background-color:#49B364 ;
   border: 2px solid #50d8af;
 }
 #hero .hero-content .btn-projects:hover {
   animation: pulse 1s;
   box-shadow: 0 0 0 0.8em transparent;
+  background: #66A3D8;
 }
 #hero .hero-slider {
   z-index: 8;
@@ -1240,6 +1274,11 @@ section {
 #contact .contact-info address, #contact .contact-info p {
   margin-bottom: 0;
   color: #000;
+}
+
+#contact p{
+  font-family: Helvetica;
+  letter-spacing: 1px;
 }
 #contact .contact-info h3 {
   font-size: 18px;
