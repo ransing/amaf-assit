@@ -341,6 +341,90 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* language toggle  */
+
+#language-toggle {
+  /* background-color: #0c879a; */
+  /* box-shadow: 0 0 0 1em rgba(217, 211, 96, 0.57); */
+  animation: pulselanguage 2s ease-in forwards;
+  position: absolute; 
+  float: right;
+  right: 13px;
+  top: -20px; 
+  border: 0;
+  width: 73px;
+  height: 20px;
+  z-index: 20;
+}
+@keyframes pulselanguage {
+  0% { background-color: #8c35ae70 ; box-shadow: -0px 0px 0px 1em rgba(207, 209, 78, 0.714); border-radius:20%;} 
+  100%{background-color: #0c2e8a00; box-shadow: 0 0 0 0em rgba(138, 67, 67, 0.57);}
+}
+
+
+#language-toggle .lang-toggle {
+  font-size: 0.8em;
+  line-height: 26px;
+  display: inline-block;
+  border-radius: 4px;
+  border: solid 1px #cac28a;
+  height: 26px;
+  box-sizing: border-box;
+  position: relative;
+  user-select: none;
+  
+}
+  
+  
+
+  #language-tool .lang-toggle:hover .slider {
+    background-color: #bbbbbb99;
+    transition: all 0.2s ease-in-out;
+  }
+
+  #language-tool .lang-toggle label {
+    cursor: pointer;
+  }
+  
+  #language-toggle .slider {
+    position: absolute;
+    top: 2px;
+    border-radius: 2px;
+    background-color: #66A3D8; 
+    width: 34px;
+    height: 20px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  #language-toggle input {
+    display: none;
+  }
+
+  #language-toggle :not(checked) + label .slider {
+    transform: translateX(2px);
+  }
+  #language-toggle :checked + label .slider {
+    transform: translateX(36px);
+  }    
+  
+  #language-toggle .options div {   
+    float: left;
+    height: 24px;
+    width: 34px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  #language-toggle .options div:last-child {
+    padding: 0px 6px;
+  }
+
+  #language-toggle .options div:first-child {
+    padding: 0px 6px;
+  }
+
+
 
 /* train tracks */
 
@@ -409,8 +493,9 @@ h1, h2, h3, h4, h5, h6 {
 #search-form .search-zip:hover{
   background:  #66A3D8;
   animation: pulse 1s;
-  box-shadow: 0 0 0 0.8em transparent;
+  box-shadow: 0 0 0 0.8em rgb(0, 157, 255);
 }
+
 
 #search-form .blue-text{
   color: #92b5d3;
@@ -480,7 +565,6 @@ cursor: pointer;
   color: #0c879a;
   background: 0;
   border: 0;
- 
 }
 
 #search-form #dialog button :hover {
@@ -491,6 +575,24 @@ cursor: pointer;
 #search-form #dialog button :hover {
   background: #065e6c;
 }
+
+#search-form #modal-close:hover {
+  animation: pulse 0.5s;
+  box-shadow: 0 0 0 0.3em rgba(138, 67, 67, 0.57);
+  background:#66A3D8;
+}
+
+#search-form .fill-out-form-btn:hover {
+  animation: pulse 0.5s;
+  box-shadow: 0 0 0 0.3em rgba(99, 202, 103, 0.57);
+  background:#66A3D8;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 ; }
+}
+
+
 
 #dialog {
   width:50vw;
@@ -1243,8 +1345,66 @@ section {
   padding: 30px 0;
 }
 
+/* contact icons socail */
+
+#contact .social-links {
+  display: flex;
+}
+#contact .social-links a {
+  /* pointer-events: none; */
+  cursor: default;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  text-decoration: none;
+  color: #49B364;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+  margin: 0 25px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s;
+}
+
+#contact .social-links a .fab {
+  font-size: 30px;
+  line-height: 80px;
+  position: relative;
+  z-index: 10;
+  transition: color 0.5s;
+}
+
+#contact .social-links a::after {
+  display: none;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: -90px;
+  left: 0;
+  background: rgb(66, 146, 202);
+  background: linear-gradient(-45deg, #ed1c94, #ffec17);
+  position: absolute;
+  transition: 0.5s;
+}
+
+#contact .social-links a:hover::after {
+  top: 0;
+}
+
+#contact .social-links a:hover .fab {
+  color: #fff;
+}
+
+#contact .social-links a:hover {
+  transform: translateY(-10px);
+}
+
+/* end socail */
+
 #contact .hide-hover{
   display: none;
+  position: absolute;
+  margin-top: 224px;
 }
 
 #contact h2 , p {

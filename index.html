@@ -31,9 +31,11 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/page7.css" />
 
   <!-- =======================================================
   * Template Name: Reveal - v4.7.0
@@ -45,81 +47,37 @@
 
 <body>
 
-  <!-- ======= Top Bar ======= -->
-  <!-- <section id="topbar" class="d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
-      </div>
-      <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-      </div>
-    </div>
-  </section> -->
-  <!-- End Top Bar-->
+  
 
-  <!-- ======= Header ======= -->
-  <!-- <header id="header" class="d-flex align-items-center">
-    <div class="container d-flex justify-content-between">
-
-      <div id="logo">
-        <a href="index.html"><img src="assets/img/breathe-easy-icon.png" alt=""></a>
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-
-    </div>
-  </header> -->
-  <!-- End Header -->
-
-
-  <!-- sticky left tracks -->
-  <!-- <section id="train-tracks">
+  <section id="language-toggle">
     <div class="row">
-    <div class=" col yellow-track"></div>
-    <div class=" col green-track"></div>
-    <div class=" col orange-track"></div>
-    <div class=" col blue-track"></div>
+      <div class="lang-toggle">
+        <input id="lang-toggle" type="checkbox"></input>
+        <label for="lang-toggle">
+          <div class="slider"></div>
+          <div class="options">
+            <div>EN</div>
+            <div>ES</div>
+          </div>
+        </label>
+      </div>
+    </div>
+    <!-- <div class="language row">
+      <span>Selected Langauge:</span>
+      <span id="language">English</span>
+    </div> -->
+  </section>
+
+  <div id="confetti-div">
+
   </div>
-  </section> -->
 
   <!-- ======= hero Section ======= -->
   <section id="hero">
 
     <div class="hero-content" data-aos="fade-up">
       <!-- <h2>Breathe <span>Easy</span><br>Bronx!</h2> -->
-      <img class="hero-logo" src="./assets/img/breathe-easy-icon.png"/>
+      <img id="hero-png" class="hero-logo" src="./assets/img/breathe-easy-icon.png"/>
       <div>
         <a href="#search-form" class="btn-get-started scrollTo">Get Started</a>
         <a href="#clients" class="btn-projects scrollTo ">Partners</a>
@@ -159,13 +117,13 @@
               <input class="align-middle text-end form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
             </div>
             <div class="col-9 h-5 col-sm-7 mb-1">
-              <p>Child with asthma in Public School</p>
+              <p id="check-1">Child with asthma in Public School</p>
             </div>
             <div class=" text-end col-3  col-sm-5 h-25">
               <input class="align-middle form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
             </div>
             <div class=" h-20 col-9 col-sm-7 h-25">
-              <p>AMAF on record</p>
+              <p id="check-2">AMAF on record</p>
             </div>
           </div>
         </div>
@@ -200,19 +158,19 @@
             <form method="dialog">
               <div class="container">
                 <div class="row">
-                  <div class="col-8 col-sm-5 h-25"><b>Zip Code</b></div>
+                  <div class="col-8 col-sm-5 h-25" id="zipcode-title"><b>Zip Code</b></div>
                   <div class="col-4 zip-code-stored">Column</div>
                   </div>
                   <div class="row">
-                  <div class="col-8 col-sm-5 h-25"><b>Population</b></div>
+                  <div class="col-8 col-sm-5 h-25" id="population-title"><b>Population</b></div>
                   <div class="col-4 population result">Column</div>
                   </div>
                   <div class="row">
-                  <div class="col-8 col-sm-5"><b>Asthma Risk</b></div>
+                  <div class="col-8 col-sm-5" id="asthma-risk"><b>Asthma Risk</b></div>
                   <div class="col-4 threat-level">Column</div>
                   </div>
                   <div class="row">
-                  <div class="col-7 col-sm-5"><b>Air Quality Index</b></div>
+                  <div class="col-7 col-sm-5" id="air-quality"><b>Air Quality Index</b></div>
                   <div class="col-5 col-sm-5 air-quality-index">Column</div>
                   </div>
                 <!-- </div> -->
@@ -220,8 +178,8 @@
               </div>
               
               <div class="modal-buttons">
-              <button class="outlined ">Close</button> 
-              <button class="fill-out-form-btn">Fill out AMAF form</button>
+              <button class="outlined " id="modal-close">Close</button> 
+              <button class="fill-out-form-btn">Fill out AMAF</button>
               </div>
             </form>
           </dialog>
@@ -232,30 +190,7 @@
       </div>
     </section>
 
-    <!-- ======= About Section ======= -->
-    <!-- <section id="about">
-      <div class="container" data-aos="fade-up">
-        <div class="row">
-          <div class="col-lg-6 about-img">
-            <img src="assets/img/about-img.jpg" alt="">
-          </div>
-
-          <div class="col-lg-6 content">
-            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
-            <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-
-            <ul>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-            </ul>
-
-          </div>
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End About Section -->
+   
 
     <!-- pdf section -->
     <section id="amaf-form">
@@ -264,16 +199,16 @@
 
           <div class="col-lg-6 content">
             <div class="d-inline-flex flex-row floex-direction-row">
-              <h2>What is &nbsp;</h2> <div class="circle blue-circle">A</div><div class="circle orange-circle">M</div><div class="circle blue-circle">A</div><div class="circle orange-circle">F</div><h2>&nbsp;?</h2>
+              <h2 id="what-is">What is&nbsp;</h2><div class="circle blue-circle">A</div><div class="circle orange-circle">M</div><div class="circle blue-circle">A</div><div class="circle orange-circle">F</div><h2>&nbsp;?</h2>
             </div>
-            <h3>Asthma Medication Administration Form</h3>
+            <h3 id="amaf-h3">Asthma Medication Administration Form</h3>
 
             <ul>
-              <li><i class="bi bi-check-circle"></i> Successful school asthma management involves individual case identification and provision of medications to students when needed.</li>
-              <li><i class="bi bi-check-circle"></i> New York City (NYC) schools require caregiver submission of an Asthma Medication Administration Form (AMAF; a physician-completed order form that must be renewed every school year) to confirm asthma diagnoses and allow school nurses to administer medication for asthma exacerbations.</li>
-              <li><i class="bi bi-check-circle"></i> Without an MAF, due to systems-based regulations, the nurse cannot administer medication, even if a student is having an asthma attack.</li>
+              <li id="list-1"><i class="bi bi-check-circle"></i> Successful school asthma management involves individual case identification and provision of medications to students when needed.</li>
+              <li id="list-2"> <i class="bi bi-check-circle"></i> New York City (NYC) schools require caregiver submission of an Asthma Medication Administration Form (AMAF; a physician-completed order form that must be renewed every school year) to confirm asthma diagnoses and allow school nurses to administer medication for asthma exacerbations.</li>
+              <li id="list-3"> <i class="bi bi-check-circle"></i> Without an AMAF, due to systems-based regulations, the nurse cannot administer medication, even if a student is having an asthma attack.</li>
             </ul>
-            <a target="_blank" href="https://www.schools.nyc.gov/docs/default-source/default-document-library/asthma-medication-administration-form-2021-22"> Download Form here </a>
+            <a id="download-form" target="_blank" href="https://www.schools.nyc.gov/docs/default-source/default-document-library/asthma-medication-administration-form-2021-22"> Download Form here </a>
 
           </div>
 
@@ -313,15 +248,15 @@
             </div>
             <div class="d-flex justify-content-center btn-group pt-0 pb-4 text-center" role="group" aria-label="Basic checkbox toggle button group">
               <input type="checkbox" class="btn-check col" id="btncheck1" autocomplete="off">
-              <label class=" col btn btn-outline-primary" for="btncheck1">Newsletter</label>
+              <label id="newletter-label" class=" col btn btn-outline-primary" for="btncheck1">&nbsp;&nbsp;Newsletter&nbsp;&nbsp;</label>
             
               <input type="checkbox" class="btn-check col" id="btncheck2" autocomplete="off">
-              <label class="btn btn-outline-primary" for="btncheck2">AMAF reminder</label>
+              <label id="reminder-label" class="btn btn-outline-primary" for="btncheck2">AMAF Reminder</label>
             
             </div>
 
-            <div class="text-center"><button type="submit" disabled  data-bs-toggle="tooltip" title="Tooltip on right">Sign Up</button></div>
-            <div class="hide-hover">Feature coming soon.</div>
+            <div  class="text-center"><button id="sign-up-btn" type="submit" disabled  data-bs-toggle="tooltip" title="Tooltip on right">Sign Up</button></div>
+            <div id="sign-up-disclaimer" class="hide-hover">Feature coming soon.</div>
           </form>
         </div>
 
@@ -330,53 +265,6 @@
 
     
 
-    <!-- ======= Services Section ======= -->
-    <!-- <section id="services">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Services</h2>
-          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
-        </div>
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="box">
-              <div class="icon"><i class="bi bi-briefcase"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident etiro rabeta lingo.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="box">
-              <div class="icon"><i class="bi bi-card-checklist"></i></div>
-              <h4 class="title"><a href="">Dolor Sitema</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata nodera clas.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="box">
-              <div class="icon"><i class="bi bi-bar-chart"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur trinige zareta lobur trade.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="box">
-              <div class="icon"><i class="bi bi-binoculars"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum rideta zanox satirente madera</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End Services Section -->
 
     <!-- ======= Clients Section ======= -->
     <section id="clients">
@@ -404,369 +292,29 @@
     </section>
     <!-- End Clients Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <!-- <section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Our Portfolio</h2>
-          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End Portfolio Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <!-- <section id="testimonials">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Testimonials</h2>
-          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
-        </div>
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
-                </p>
-                <img src="assets/img/testimonial-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
-                </p>
-                <img src="assets/img/testimonial-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
-                </p>
-                <img src="assets/img/testimonial-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
-                </p>
-                <img src="assets/img/testimonial-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <img src="assets/img/quote-sign-left.png" class="quote-sign-left" alt="">
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <img src="assets/img/quote-sign-right.png" class="quote-sign-right" alt="">
-                </p>
-                <img src="assets/img/testimonial-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
-            </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End Testimonials Section -->
-
-    <!-- ======= Call To Action Section ======= -->
-    <!-- <section id="call-to-action">
-      <div class="container" data-aos="zoom-out">
-        <div class="row">
-          <div class="col-lg-9 text-center text-lg-start">
-            <h3 class="cta-title">Call To Action</h3>
-            <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- End Call To Action Section -->
-
-    <!-- ======= Team Section ======= -->
-    <!-- <section id="team">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Our Team</h2>
-        </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team-1.jpg" alt=""></div>
-              <div class="details">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team-2.jpg" alt=""></div>
-              <div class="details">
-                <h4>Sarah Jhinson</h4>
-                <span>Product Manager</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team-3.jpg" alt=""></div>
-              <div class="details">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team-4.jpg" alt=""></div>
-              <div class="details">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End Team Section -->
+    
 
     <!-- ======= Contact Section ======= -->
-    <!-- <section id="contact">
+    <section id="contact">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>Contact Us</h2>
-          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
+          <h2 id="social-media" >Contact Us</h2>
+         </div>
+         <div class="social-links justify-content-center align-items-center">
+          <a ><i class="fab fa-facebook-f"></i></a>
+          <a ><i class="fab fa-instagram"></i></a>
+          <a ><i class="fab fa-twitter"></i></a>
+          <a ><i class="fab fa-tiktok"></i></a>
+          <a ><i class="fab fa-linkedin-in"></i></a>
         </div>
 
-        <div class="row contact-info">
-
-          <div class="col-md-4">
-            <div class="contact-address">
-              <i class="bi bi-geo-alt"></i>
-              <h3>Address</h3>
-              <address>A108 Adam Street, NY 535022, USA</address>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="contact-phone">
-              <i class="bi bi-phone"></i>
-              <h3>Phone Number</h3>
-              <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="contact-email">
-              <i class="bi bi-envelope"></i>
-              <h3>Email</h3>
-              <p><a href="mailto:info@example.com">info@example.com</a></p>
-            </div>
-          </div>
-
-        </div>
+        
       </div>
 
-      <div class="container mb-4">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
+      
 
-      <div class="container">
-        <div class="form">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-            <div class="row">
-              <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-              </div>
-              <div class="form-group col-md-6 mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-              </div>
-            </div>
-            <div class="form-group mt-3">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-            </div>
-            <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-            </div>
-
-            <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
-
-            <div class="text-center"><button type="submit">Send Message</button></div>
-          </form>
-        </div>
-
-      </div>
-    </section> -->
+      
+    </section>
     <!-- End Contact Section -->
 
   </main><!-- End #main -->
@@ -775,11 +323,11 @@
   <!-- <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>Reveal</strong>. All Rights Reserved
+       
       </div>
-      <div class="credits">
+      <div class="">
         
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        
       </div>
     </div>
   </footer> -->
@@ -798,6 +346,7 @@
 
   <!-- Template Main JS File -->
   <script type="text/javascript" src="assets/js/main.js"></script>
+  <script type="text/javascript" src="assets/js/confetti.js"></script>
 
 </body>
 
